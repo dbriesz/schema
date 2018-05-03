@@ -597,6 +597,15 @@ type Data struct {
 						Type        string `json:"type"`
 						Description string `json:"description"`
 					} `json:"reference"`
+					Email struct {
+						Type        string `json:"type"`
+						Description string `json:"description"`
+						Format      string `json:"format"`
+					} `json:"email"`
+					Phone struct {
+						Type        string `json:"type"`
+						Description string `json:"description"`
+					} `json:"phone"`
 				} `json:"properties"`
 			} `json:"items"`
 		} `json:"references"`
